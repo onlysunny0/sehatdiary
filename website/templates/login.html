@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}login{% endblock %}
+{% block home %}
+            <li><a href="/" >Home</a></li>
+            {% endblock %}
+{% block log %}
+            <li><a href="/login" id="active">login</a></li>
+{% endblock  %}
+{% block down %}
+
+<section class="contener">
+  <div class="register">
+    <form method="POST">
+        <h3 class="reg" style="padding-top: 20% ;">Login</h3>
+        <div class="formg">
+            <label for="email">Email Address</label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   placeholder="Enter your email">
+    
+            <label for="password">Password</label>
+            <input type="password" 
+                   id="password1" 
+                   name="password" 
+                   placeholder="Enter password">
+        </div>
+        <button class="bttn" type="submit" style="padding: 1%; font-size: medium;">login</button>
+    </form>
+  </div>
+ 
+  <div class="man">
+    <img class="teg" src="../static/img/login.png" alt="">
+  </div>
+</section>
+    
+
+{% endblock  %}

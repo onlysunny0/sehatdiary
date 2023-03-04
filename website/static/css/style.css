@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=IBM+Plex+Mono:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+/*Base file design*/
+/*navigation*/
+.navbar{
+  display: flex;
+  padding: .5vw;
+  padding-left: 1vw;
+  padding-bottom: .5%;
+  border-bottom:1px solid rgb(40,57,139) ;
+}
+.navbar input[type="checkbox"]{
+  display: none;
+}
+.logo{
+  width: 50vw;
+  display: flex;
+}
+.logo img{
+  width: 5vw;
+  height: 5vw;
+}
+.logo div{
+  width: 5vw;
+  height: 5vw;
+}
+.sehat{
+  font-size:1.5vw;
+  padding-top: 10%;
+  width: auto;
+}
+.diary{
+  color: rgb(40,57,139);
+  font-family: 'Edu SA Beginner', cursive;
+  font-size:1.5vw;
+  
+}
+.links{
+  width: 50vw;
+  margin-top: 0.7%;
+}
+.items{
+  list-style-type: none;
+  display: flex;
+  margin-left: 10vw;
+  padding-right: 20vw;
+  overflow: hidden;
+}
+.items li{
+  float: left;
+  margin-right: 4vw;
+}
+#active{
+  background-color: rgb(40,57,139);
+  color: white;
+}
+.items li a{
+  font-size: 1vw;
+  font-weight: 600;
+  display: block;
+  color: rgb(40,57,139);
+  text-align: center;
+  padding:  1vw 1.5vw;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 40%;
+  text-decoration: none;
+}
+.items li a:hover  {
+   background-color:rgb(49,114,181);
+    color: white;  
+  }
+
+
+/*taglines*/
+.contener{
+    display: flex;
+    
+}
+.register{
+  width: 50%;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+/*Home File Design*/
+.tagline{
+  color: rgb(40,57,139);
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 4vw;
+  margin-top: 25%;
+  margin-bottom: 5%;
+}
+.man{
+  width: 50%;
+}
+.teg{
+  width: 70%;
+  margin: 0%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.register a{
+      
+      background-color: rgb(40,57,139);
+      color: white;
+      margin-left: 40%;
+      margin-right: 40%;
+      padding: 2% 3%;
+      font-size: 1vw;
+      text-decoration: none;
+      width: 100%;
+      font-weight: 600; 
+      
+}
+
+.bigblock{
+  background-color:aqua;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block{
+  padding-left: 4vw;
+
+  float: right;
+  padding-right: 1vw;
+  
+}
+.imgblock h3{
+  color:rgb(40,57,139) ;
+  text-align: center;
+  padding-left: 7vw;
+  padding-top: 5vw;
+  font-size: 12vw;
+  font-family: 'Edu SA Beginner', cursive;
+}
+.about{
+  padding-top: 1vw;
+  color: rgb(24,37,59);
+  text-align: center;
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 2vw;
+  padding-bottom: 1vw;
+}
+.imgblock{
+  height: 32vw;
+  display: flex;
+}
+.imgblock img{
+ 
+  padding-top: 1vw;
+  width: 30vw;
+  height: 30vw;
+}
+    
+
+ 
+
+/*Register file design */
+/*Registration form */
+.reg{
+    font-family: 'Poppins', sans-serif;
+    font-size:200%;
+    color: rgb(40,57,139);
+    padding-top: 10%;
+    text-align: center;
+}
+.formg{
+    padding-top:8% ;
+    
+}
+.formg label{
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  padding-left: 10%;
+  font-size: small;
+  
+}
+.formg input{
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    padding: 1%;   
+    border-color:#000;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden; 
+    border-width: 2px;
+}
+form{
+    border-color: white;
+}
+.bttn{
+  margin-left: 10%;
+  width: 80%;
+  background-color:rgb(40,57,139);
+  border: none;
+  padding: 2%;
+  font-size: large;
+  color: white;
+}
+
+/*Alert*/
+#id02{
+  background-color: #f44336;
+  padding: 1%;
+}
+#id03{
+  background-color: green;
+  padding: 1%;
+}
+#id03 p{
+  color: #ccc;
+}
+#id02 p{
+  color: #ccc;
+}
+#alertclose1{
+  padding-top: 6%;
+}
+#alertclose2{
+  padding-top: 6%;
+}
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* user page style */
+
+.welcome{
+  color: rgb(40,57,139);
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 370%;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  
+}
+
+
+
+/* reports */
+.reports{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hb{
+  width: 16vw;
+  height: 25vw;
+  background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  margin-left: 13%;
+  margin-top: 10%;
+  border-radius: 30px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, .5);
+}
+.hb img{
+  align-items: center;
+  width: 50%;
+  padding-top: 3%;
+  padding-left: 25%;
+}
+.hb h3{
+  text-align: center;
+  
+  width: 100%;
+  color: white;
+  font-size:x-large;
+}
+.value{
+  padding-top: 30%;
+}
+
+
+/* content home */
+
+
+
+
+
+/* footer */
+footer{
+  background-color: rgb(40,57,139);
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+footer p{
+  color:#ccc;
+  text-align: center;
+  margin-top: 40%;
+}

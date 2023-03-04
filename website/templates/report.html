@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block log %}<li><a href="/logout">logout</a></li>{% endblock %}
+{% block home %}<li><a href="/user" id="active">Home</a></li>{% endblock %}
+{% block down %}
+
+<section class="contener">
+    <div class="register">
+        <form method="POST">
+            <h3 class="reg">Helth Information</h3>
+            <div class="formg">
+                <label for="hb">Hemoglobiny</label>
+                <input type="number" 
+                       id="email" 
+                       name="hb" 
+                       placeholder="Enter your Hemoglobiny">
+                
+                <label for="tlc">TLC(Total Leukocyte count)</label>
+                    <input type="number" 
+                        id="email" 
+                        name="tlc" 
+                        placeholder="Enter your TLC">
+        
+                <label for="platelets">platelets</label>
+                    <input type="number" 
+                        name="platelets" 
+                        placeholder="Enter your platelets">
+            
+                <label for="tlc">ERS(Erythrocyte Sedimentation Rate)</label>
+                    <input type="number" 
+                        id="email" 
+                        name="ers" 
+                        placeholder="Enter your ERS">
+        
+                <label for="tlc">BT(Bleeding Time)</label>
+                    <input type="number" 
+                        id="email" 
+                        name="bt" 
+                        placeholder="Enter your BT">
+        
+                <label for="tlc">CT(Clotting Time)</label>
+                    <input type="number" 
+                        id="email" 
+                        name="ct" 
+                        placeholder="Enter your CT">
+                
+                <label for="tlc">Blood group</label>
+                    <input list="groupss"
+                        id="email" 
+                        name="bloodgroup" 
+                        laceholder="Enter your Blood group">
+        
+                <datalist id="groupss">
+                    <option value="A positive">
+                    <option value="A negative">
+                    <option value="B positive">
+                    <option value="B negative">
+                    <option value="AB positive">
+                    <option value="AB negative">
+                    <option value="O positive">
+                    <option value="O negative">
+        
+                </datalist>
+            
+                <label for="tlc">Blood Shugar</label>
+                    <input type="number" 
+                        id="email" 
+                        name="bloodshugar" 
+                        placeholder="Enter your Blood Shugar">
+         
+                <label for="tlc">Blood Urea</label>
+                    <input type="number" 
+                        id="email" 
+                        name="bloodurea" 
+                        placeholder="Enter your Blood Urea">                
+                        
+            </div>
+            <button class="bttn" type="submit">submit</button>
+        
+    </div>
+    <div class="man">
+      <img class="teg" src="../static/img/side design.png" alt="">
+    </div>
+  </section>
+
+
+
+{% endblock %}

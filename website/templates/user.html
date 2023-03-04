@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}{{username}}{% endblock %}
+{% block log %}<li><a href="/logout">logout</a></li>{% endblock %}
+{% block home %}<li><a href="/user" id="active">Home</a></li>{% endblock %}
+
+{% block down %}
+
+<section class="contener">
+    <div class="register">
+        <h2 class="welcome">Hello <br>{{username}}</h2>
+        <a href="/report" style="margin-right: 30%;">Health report</a> 
+    </div>
+    <div class="man">
+      <img class="teg" src="../static/img/side design.png" alt="">
+    </div>
+</section>
+
+
+<div class="reports">
+    <h2 class="tagline" style="margin-top: 0%; margin-bottom: 5%;">Your Health Reports</h2>
+    <div class="hb">
+        <img src="../static/img/himol.png" alt="himo">
+        <h3>Hemoglobiny</h3>
+        <h3 class="value">{{hemoglobiny}} gm%</h3>
+    </div>
+
+    <div class="hb" style="background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );">
+        <img src="../static/img/tlcc.png" alt="himo">
+        <h3 class="tlc" >TLC</h3>
+        <h3 class="value">{{tlc}} mm cube</h3>
+    </div>
+
+    <div class="hb" style="background-image: linear-gradient(to right, #ff512f, #f09819);">
+        <img src="../static/img/tlc.png" alt="himo">
+        <h3>platelets</h3>
+        <h3 class="value">{{platelets}} lac.per. cumm.</h3>
+    </div>
+
+    <div class="hb" style="background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    ">
+        <img src="../static/img/ers.png" alt="himo">
+        <h3>ERS</h3>
+        <h3 class="value">{{ers}} mm/1hr</h3>
+    </div>
+
+    <div class="hb" style="background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    ">
+        <img src="../static/img/bt.png" alt="himo">
+        <h3>BT(Bleeding Time)</h3>
+        <h3 class="value">{{bt}} min</h3>
+    </div>
+
+    <div class="hb" style="background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    ">
+        <img src="../static/img/bt.png" alt="himo">
+        <h3>CT(Clotting Time)</h3>
+        <h3 class="value">{{ct}} min</h3>
+    </div>
+
+    <div class="hb" style="background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    
+    ">
+        <img src="../static/img/bg.png" alt="himo">
+        <h3>Blood Group</h3>
+        <h3 class="value">{{bloodgroup}}</h3>
+    </div>
+
+    <div class="hb" style="background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    ">
+        <img src="../static/img/bs.png" alt="himo">
+        <h3>Blood Shugar</h3>
+        <h3 class="value">{{bloodshugar}} mg%</h3>
+    </div>
+
+    <div class="hb" style="background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    ">
+        <img src="../static/img/bu.png" alt="himo">
+        <h3>Blood Urea</h3>
+        <h3 class="value">{{bloodurea}} mg%</h3>
+    </div>
+</div>
+{% endblock  %}

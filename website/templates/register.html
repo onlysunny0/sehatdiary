@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block down %}
+
+<section class="contener">
+       <div class="register">
+              <form method="POST">
+                     <h3 class="reg">Register</h3>
+                     <div class="formg">
+                         <label for="email">Email Address</label>
+                         <input type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email">
+             
+                         <label for="name">Name</label>
+                         <input type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Enter your name">
+             
+             
+             
+                         
+                 
+                         <label for="password">Password</label>
+                         <input type="password" 
+                                id="password1" 
+                                name="password1" 
+                                placeholder="Make password">
+                     
+                         <label for="password">Password(conform)</label>
+                         <input type="password" 
+                                id="password2" 
+                                name="password2" 
+                                placeholder="conform password">
+                     </div>
+                     <button class="bttn" type="submit">submit</button>
+                 </form>
+              
+       </div>
+       <div class="man">
+         <img class="teg" src="../static/img/register.png" alt="">
+       </div>
+</section>
+    
+
+{% endblock  %}

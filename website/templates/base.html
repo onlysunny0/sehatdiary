@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%block style%}{%endblock%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sehat diary in health care is actually a vibrant force doctors can now monitor patients health and improvement continuously while patients in the other hand can connect with their doctors easily.">
+    <meta name="generator" content="Publii Open-Source health care site">
+    <meta name="keywords" content="Sehat, SEHAT, sehat, Diary, diary, DIARY, Sehatdiary, SEHATDIARY, Health, HEALTHCARE,  ">
+    <meta name="author" content="Sunny Bhardwaj">
+    <link rel="shortcut icon" href="../static/img/titellogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/mobile.css">
+    <title>{% block title %}सेहत DIARY{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../static/img/logo1.png" alt="सेहत DIARY">
+            <div>
+                <h1 class="sehat">सेहत</h1>
+                <h1 class="diary">DIARY</h1>
+            </div>
+        </div>
+        <input type="checkbox">
+        <div class="hamburgar">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+        </div>
+        <div class="links">
+            <ul class="items">
+                
+                {% block home %}
+                <li><a href="/" id="active">Home</a></li>
+                {% endblock %}
+               
+                <li><a href="#">Hospital</a></li>
+
+                {% block about %}
+                <li><a href="/about">About</a></li>
+                {% endblock %}
+
+                {% block log %}
+                <li><a href="/login">login</a></li>
+                {% endblock  %}
+                
+            </ul>
+        </div>
+    </nav>
+
+<!-- alert flash messages -->
+    {%with messages = get_flashed_messages(with_categories=true)%}
+        {%if messages%}
+        {%for category, message in messages%}
+        {%if category=='error'%}
+        <div class="alertdanger" id="id02">
+            <p>{{message}}</p>
+            <span onclick="document.getElementById('id02').style.display='none'"
+            class="close" id="alertclose1" title="Close Modal">&times;</span>
+        </div>
+        {%else%}
+        <div class="alertsuccess" id="id03">
+            {{message}}
+            <span onclick="document.getElementById('id03').style.display='none'"
+            class="close" id="alertclose2" title="Close Modal">&times;</span>
+        </div>
+        {%endif%}
+        {%endfor%}
+    {%endif%}
+    {%endwith%}
+
+
+    
+
+{% block down %}{% endblock  %}
+
+<footer>
+    <p>work in progress</p>
+</footer>
